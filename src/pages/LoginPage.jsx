@@ -36,10 +36,10 @@ export default function Loginpage() {
         console.log(value)
     }
   return (
-    <div>
-        <form onSubmit={handleSumbit}>
-        Email:  <input type="email" placeholder='Enter your email' onChange={handleChangeEmail} /><br />
-        Password: <input type="password" placeholder='Enter your password'  onChange={ handleChangePass}/><br />
+    <div style={{textAlign:'center'}}>
+        <form onSubmit={handleSumbit} >
+        Email:  <input type="email" placeholder='Enter your email' onChange={handleChangeEmail } /><br /><br />
+        Password: <input type="password" placeholder='Enter your password'  onChange={ handleChangePass}/><br /><br />
         <input  type="submit"/>
         </form>
     </div>

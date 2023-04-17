@@ -1,11 +1,11 @@
 import React from 'react'
 import { Route,Routes } from 'react-router-dom'
 import Navbar from './Navbar/Navbar'
-import Home from './Allroutes/Home'
-import About from './Allroutes/About'
-import Clientstories from './Allroutes/Clientstories'
-import ContactUs from './Allroutes/ContactUs'
-import Loginpage from './Allroutes/Loginpage'
+import Home from './pages/Home'
+import About from './pages/About'
+import Clientstories from './pages/ClientStories'
+import ContactUs from './pages/ContactUs'
+import Loginpage from './pages/LoginPage'
 //import './App.css'
 function App() {
   return (

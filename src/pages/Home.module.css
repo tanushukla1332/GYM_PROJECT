@@ -1,0 +1,22 @@
+/* Home.module.css */
+.main_file {
+    width: 100%;  
+    position: relative; 
+    text-align: center;
+  }
+  
+  .heading {
+    position: absolute;
+    top: 20rem; /* Update margin-top to top */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Added width to center align text */
+  }
+  
+  .heading h1 {
+    font-size: 24px;
+    color: grey;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  

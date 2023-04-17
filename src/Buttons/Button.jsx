@@ -6,7 +6,9 @@ import { useNavigate } from 'react-router-dom'
   return (
     <div>
         <div>
-        <button onClick={()=>loginnavigator('/login')}>Sign in</button>
+        <button onClick={()=>loginnavigator('/login')}
+        style={{display:'flex', padding:'15px'}}
+        >Sign in</button>
         </div>
     </div>
   )
