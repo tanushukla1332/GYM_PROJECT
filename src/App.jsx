@@ -5,6 +5,7 @@ import Home from './Allroutes/Home'
 import About from './Allroutes/About'
 import Clientstories from './Allroutes/Clientstories'
 import ContactUs from './Allroutes/ContactUs'
+import Loginpage from './Allroutes/Loginpage'
 //import './App.css'
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route  path="/About" element={<About/>}/>
         <Route  path="/Clientstories" element={<Clientstories/>}/>
         <Route  path="/Contactus" element={<ContactUs/>}/>
+        <Route  path="/login" element={<Loginpage/>}/>
       </Routes>
     </div>
   )

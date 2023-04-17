@@ -1,6 +1,21 @@
-.main_container   ul {
+
+/* .main_container{
     display: flex;
     justify-content: space-between;
+}
+ul  {
+    display: flex;
+} */
+
+.conatiner{
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  
 }
 li{
     list-style: none;
@@ -11,4 +26,5 @@ button{
     border: none;
     cursor: pointer;
 }
+
 
