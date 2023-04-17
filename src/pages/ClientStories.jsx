@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Clientstories() {
+export default function ClientStories() {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>EVERY WOMAN HAS A STORY</h1>
