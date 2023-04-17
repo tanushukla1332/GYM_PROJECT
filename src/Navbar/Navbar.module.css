@@ -1,0 +1,14 @@
+.main_container   ul {
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+
