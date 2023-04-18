@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.container{
+    display: flex;
+    width: 100%;
+    
+}
+.leftContainer{
+    width: 50%;
+    
+}
+.rightContainer{
+    width: 50%;
+    border: 1px solid red;
+}
+.leftContainer img{
+    height: 135%;
+    width: 100%;
+}
+.container .rightContainer{
+    
+
+}

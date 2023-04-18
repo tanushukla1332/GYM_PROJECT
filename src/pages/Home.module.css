@@ -11,12 +11,22 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%; /* Added width to center align text */
+    
   }
   
   .heading h1 {
-    font-size: 24px;
-    color: grey;
+    font-size: 30px;
+    color: whitesmoke;
+    /* color: black; */
     max-width: 80%;
     margin: 0 auto;
+    
   }
-  
+  body{
+    background-color: gray;
+    /* background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2021-12/211208-working-out-stock-mn-1310-55e1c7.jpg"); */
+  }
+  .img{
+    width: 100%;
+    /* opacity: 0.5; */
+  }

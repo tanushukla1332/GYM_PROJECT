@@ -1,34 +1,43 @@
+/* Navbar main container */
 .Nav.main_container {
-    position: sticky;
-    top: 0;
-    background-color: #ffffff; /* set the background color of your navbar */
-    z-index: 100; /* adjust the z-index as needed */
-    height: 100%; /* add height value */
-  }
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; 
+  z-index: 100; 
+  height: 100%; 
   
-  .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px; /* add padding as needed */
-  }
+}
+
+/* Navbar container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px; 
   
-  ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: center; /* align items vertically in the middle */
-  }
+}
+
+/* Unordered list inside the navbar */
+ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center; /* align items vertically in the middle */
+}
+
+/* List items in the navbar */
+li {
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
   
-  li {
-    list-style: none;
-    text-decoration: none;
-    /* text-transform: uppercase; */
-  }
-  
-  button {
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Add any other styles as needed for your navbar */
-  
+}
+
+/* Button in the navbar */
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* li Link{
+  color: whitesmoke;
+} */
