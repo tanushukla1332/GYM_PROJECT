@@ -46,25 +46,27 @@ export default function SignUpPage() {
     }
   return (
     <div className={Login.mainContainer}>
-    <div className={Login.from} style={{textAlign:'center'}}>
+    <div className={Login.from} >
         <img className={Login.image} src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
         alt="profile"/>
         <form onSubmit={handleSumbit} >
           <div className={Login.inputDiv}>
-        UserName : <input type="text" placeholder='Enter your username' onChange={handleUserName} /><br /><br />
-        Email:  <input type="email" placeholder='Enter your email' onChange={handleChangeEmail } /><br /><br />
-        Password: <input type="password" placeholder='Enter your password'  onChange={ handleChangePass}/><br /><br />
+        UserName : <input type="text" placeholder='Enter your username' onChange={handleUserName} /><br />
+        Email:  <input type="email" placeholder='Enter your email' onChange={handleChangeEmail } /><br />
+        Password: <input type="password" placeholder='Enter your password'  onChange={ handleChangePass}/><br />
         
         {/* <input  type="submit"/> */}
+        </div>
+        <br/>
         <div className={Login.buttonDiv}>
-    <p className="registerLink">
-      Already an account?
+    <p className={Login.registerLink}>
+      Already have an account?
       <br />
       <Link to="/signin">SignIn</Link>
     </p>
     <button className={Login.button}>SignUp</button>
   </div>
-        </div>
+        
         </form>
     </div>
     </div>

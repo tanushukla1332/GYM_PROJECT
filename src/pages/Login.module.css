@@ -8,7 +8,7 @@
 }
 .from {
     background-color: #9c8b8b;
-    height: 20em;
+    height: 25em;
     width: 26em;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
     display: flex;
     width: 75%;
     margin-top: -1em;
-    align-items: stretch;
+    align-items:stretch;
     flex-direction: column;
     justify-content: center;
 }

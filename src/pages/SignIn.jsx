@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import Login from "./Login.module.css"
+import { Link } from "react-router-dom";
 
 export default function SignIn() {
   const[userList,setUserList]=useState([])
@@ -20,16 +21,22 @@ export default function SignIn() {
               alt=""
             />
             <div className={Login.inputDiv}>
-              <input
-                className={Login.emailInput}
+            Email:<input type="email"
                 placeholder="EMAIL"
               />
               <br />
             
-              <input className={Login.passwordInput} placeholder="PASSWORD" />
+              Password:<input type="password" className={Login.passwordInput} placeholder="PASSWORD" />
             </div>
             <br />
-            <button className={Login.button}>SignIn</button>
+            <div className={Login.buttonDiv}>
+    <p className={Login.registerLink}>
+      Don't have an account?
+      <br />
+      <Link to="/signup">SignUp</Link>
+    </p>
+    <button className={Login.button}>SignIn</button>
+  </div>
           </div>
         </div>
       </>
