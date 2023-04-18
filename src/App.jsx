@@ -1,25 +1,28 @@
-import React from 'react'
-import { Route,Routes } from 'react-router-dom'
-import Navbar from './Navbar/Navbar'
-import Home from './Allroutes/Home'
-import About from './Allroutes/About'
-import Clientstories from './Allroutes/Clientstories'
-import ContactUs from './Allroutes/ContactUs'
-import Loginpage from './Allroutes/Loginpage'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./Navbar/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import ClientStories from "./pages/Clientstories";
+import ContactUs from "./pages/ContactUs";
+import SignUpPage from "./pages/SignUp";
+import SignIn from "./pages/SignIn"
+
 //import './App.css'
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route  path="/" element={<Home/>}/>
-        <Route  path="/About" element={<About/>}/>
-        <Route  path="/Clientstories" element={<Clientstories/>}/>
-        <Route  path="/Contactus" element={<ContactUs/>}/>
-        <Route  path="/login" element={<Loginpage/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/client-stories" element={<ClientStories />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/signup" element={<SignUpPage/>} />
+        <Route path="/signin" element={<SignIn/>}/>
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
