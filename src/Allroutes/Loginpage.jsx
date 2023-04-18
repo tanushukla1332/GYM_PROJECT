@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 export default function Loginpage() {
+
     const[email,setEmail]=useState("")
     const[password,setPassword]=useState("")
     const getUsersdata = () => {
@@ -33,7 +34,7 @@ export default function Loginpage() {
     }
     function handleChangePass(event){
         setPassword (event.target.value)
-        console.log(value)
+        // console.log(value)
     }
   return (
     <div>
