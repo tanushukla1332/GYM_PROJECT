@@ -14,7 +14,8 @@ export default function ContactUs() {
          <h3><span>📞</span> +91 92000 01234</h3>
          <h3><span>📧</span> gym@gmail.com</h3>
          <h4>Orange park Location, @Noida Uttar Pradesh</h4>
-         📌<a href="https://www.google.co.in/maps/place/Meraki+Fitness+Studio+-+Available+on+cult.fit+-+Gyms+in+Sector-141,+Noida/@28.5530645,77.298515,12z/data=!4m10!1m2!2m1!1snoida+gym!3m6!1s0x390ce997b86b5ba5:0x21e21b085596bafe!8m2!3d28.5092914!4d77.4155339!15sCglub2lkYSBneW1aCyIJbm9pZGEgZ3ltkgEDZ3lt4AEA!16s%2Fg%2F11rjsgjl0t">Meraki Fitness Studio - Available on cult.fit - Gyms in Sector-141, Noida</a>
+         <span>📌<a href="https://www.google.co.in/maps/place/Meraki+Fitness+Studio+-+Available+on+cult.fit+-+Gyms+in+Sector-141,+Noida/@28.5530645,77.298515,12z/data=!4m10!1m2!2m1!1snoida+gym!3m6!1s0x390ce997b86b5ba5:0x21e21b085596bafe!8m2!3d28.5092914!4d77.4155339!15sCglub2lkYSBneW1aCyIJbm9pZGEgZ3ltkgEDZ3lt4AEA!16s%2Fg%2F11rjsgjl0t">Meraki Fitness Studio - Available on cult.fit - Gyms in Sector-141, Noida</a>
+         </span>
         </div>
       </section>
     </div>

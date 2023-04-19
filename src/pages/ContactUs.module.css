@@ -19,9 +19,29 @@
     align-items: center;
     justify-content: center;
     width: 50%;
-    border: 1px solid red;
+
 }
 .leftContainer img{
     height: 135%;
     width: 100%;
+}
+.rightContainer h1{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.rightContainer h3{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.rightContainer h4{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.rightContainer span{
+    margin-top: 20px;
+    padding: 20px;
+}
+.rightContainer a {
+    text-decoration: none;
+    color: black;
 }

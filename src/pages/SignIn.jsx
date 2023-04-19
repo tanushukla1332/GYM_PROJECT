@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import Login from "./Login.module.css"
+import Sign from "./Signin.module.css"
 import { Link } from "react-router-dom";
 
 export default function SignIn() {
@@ -13,29 +13,29 @@ export default function SignIn() {
     return (
       <>
         
-        <div className={Login.mainContainer}>
-          <div className={Login.from}>
+        <div className={Sign.mainContainer}>
+          <div className={Sign.from}>
             <img
-              className={Login.image}
+              className={Sign.image}
               src="https://png.pngtree.com/png-vector/20190114/ourmid/pngtree-vector-add-user-icon-png-image_313043.jpg"
               alt=""
             />
-            <div className={Login.inputDiv}>
+            <div className={Sign.inputDiv}>
             Email:<input type="email"
                 placeholder="EMAIL"
               />
               <br />
             
-              Password:<input type="password" className={Login.passwordInput} placeholder="PASSWORD" />
+              Password:<input type="password" className={Sign.passwordInput} placeholder="PASSWORD" />
             </div>
             <br />
-            <div className={Login.buttonDiv}>
-    <p className={Login.registerLink}>
+            <div className={Sign.buttonDiv}>
+    <p className={Sign.registerLink}>
       Don't have an account?
       <br />
       <Link to="/signup">SignUp</Link>
     </p>
-    <button className={Login.button}>SignIn</button>
+    <button className={Sign.button}>SignIn</button>
   </div>
           </div>
         </div>

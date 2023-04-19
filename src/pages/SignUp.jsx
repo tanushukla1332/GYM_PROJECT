@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Login from "./Login.module.css"
+import Sign from "./Signin.module.css"
 import { Link } from "react-router-dom";
 
 export default function SignUpPage() {
@@ -45,12 +45,12 @@ export default function SignUpPage() {
         // console.log(value)
     }
   return (
-    <div className={Login.mainContainer}>
-    <div className={Login.from} >
-        <img className={Login.image} src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
+    <div className={Sign.mainContainer}>
+    <div className={Sign.from} >
+        <img className={Sign.image} src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
         alt="profile"/>
         <form onSubmit={handleSumbit} >
-          <div className={Login.inputDiv}>
+          <div className={Sign.inputDiv}>
         UserName : <input type="text" placeholder='Enter your username' onChange={handleUserName} /><br />
         Email:  <input type="email" placeholder='Enter your email' onChange={handleChangeEmail } /><br />
         Password: <input type="password" placeholder='Enter your password'  onChange={ handleChangePass}/><br />
@@ -58,13 +58,13 @@ export default function SignUpPage() {
         {/* <input  type="submit"/> */}
         </div>
         <br/>
-        <div className={Login.buttonDiv}>
-    <p className={Login.registerLink}>
+        <div className={Sign.buttonDiv}>
+    <p className={Sign.registerLink}>
       Already have an account?
       <br />
       <Link to="/signin">SignIn</Link>
     </p>
-    <button className={Login.button}>SignUp</button>
+    <button className={Sign.button}>SignUp</button>
   </div>
         
         </form>
