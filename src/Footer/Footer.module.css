@@ -1,6 +1,7 @@
 .footer_table{
     background-color:lightcoral;
     width:100%;
+    
 }
 
 /* .tableData{
@@ -9,6 +10,9 @@
    margin-right:50px;
     
 } */
-.tableData tr td {
-    margin: 50px;
+.tableData tr td{
+    padding: 20px;
+    color: brown;
+    text-align: center;
+
 }
