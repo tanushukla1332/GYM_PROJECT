@@ -37,7 +37,7 @@ export default function SignIn() {
               <br />
               <Link to="/signup">SignUp</Link>
             </p>
-            <button className={Sign.button} onClick={handelsubmitButton}>JoinUs</button>
+            <button className={Sign.button} onClick={handelsubmitButton}>Sign in</button>
           </div>
         </div>
       </div>
