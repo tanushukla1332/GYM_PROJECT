@@ -1,0 +1,14 @@
+.footer_table{
+    background-color:lightcoral;
+    width:100%;
+}
+
+/* .tableData{
+   padding: 20px;
+   color:brown;
+   margin-right:50px;
+    
+} */
+.tableData tr td {
+    margin: 50px;
+}
