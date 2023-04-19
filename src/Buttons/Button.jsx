@@ -4,6 +4,7 @@ import Butt from './Button.module.css'
 
 export default function Button() {
   const LoginNavigator = useNavigate();
+ 
   return (
     <div>
       <div className={Butt.btn}>
@@ -13,6 +14,7 @@ export default function Button() {
         >
 Join us
         </button>
+        
       </div>
     </div>
   );
