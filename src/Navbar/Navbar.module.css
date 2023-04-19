@@ -3,18 +3,18 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  
   /* background-color: #ffffff;  */
   /* z-index: 100; 
-  height: 100%;  */
-  
+  height: 100%;  */ 
 }
 /* Navbar container */
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px; 
-  
-  
+  padding: 10px 20px;
+  /* display: none; */
+ 
 }
 
 /* Unordered list inside the navbar */
@@ -50,3 +50,19 @@ li a :hover{
 /* li Link{
   color: whitesmoke;
 } */
+@media screen and(max-width: 768px){
+  .container{
+    display:block;
+        position:fixed;
+        right:-200px;
+        top: 0px;
+        background-color: red;
+        height: 100vh;
+        width: 200px;
+        z-index:10;
+  }
+  
+
+  
+} 
+  
