@@ -36,22 +36,21 @@ export default function ClientStories() {
     }
      ]
   return (
-    <div>
-      <div className={style.cardDetails} >
+    <div className={style.main}>
+       <div className={style.cardDetails} > 
             {clients.map((ele)=>(
                 <div className={style.card} >
-                 
+ 
                     <img className={style.img}  src={ele.image} alt=""/>
                    
                     
                     <h1 className={style.name}>Name :- {ele.name}</h1>
                     
-                  
                     <span className={style.description}>Description :-{ele.description}</span>
                     
                 </div>
 
-            ))}
+            ))} 
         </div>
     </div>
     

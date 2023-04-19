@@ -26,8 +26,6 @@ export default function SignUpPage() {
             userName,
             email,
             password,
-
-
          })
          localStorage.setItem('users', JSON.stringify(users));
     }
@@ -49,7 +47,7 @@ export default function SignUpPage() {
     <div className={Sign.from} >
         <img className={Sign.image} src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
         alt="profile"/>
-        <form onSubmit={handleSumbit} >
+        <form onSubmit={handleSumbit}>
           <div className={Sign.inputDiv}>
         UserName : <input type="text" placeholder='Enter your username' onChange={handleUserName} /><br />
         Email:  <input type="email" placeholder='Enter your email' onChange={handleChangeEmail } /><br />

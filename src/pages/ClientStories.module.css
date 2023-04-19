@@ -1,30 +1,36 @@
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url("https://cdn.pixabay.com/photo/2023/04/15/17/17/forest-floor-7928213_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+
+}
 .cardDetails{
     /* background-color: black; */
     display: flex;
-    height: 32rem;
     flex-direction: row;
-    overflow: scroll;
-    gap:2em;
-    max-width:150em;
-    margin-left:15em;
-    margin-right:15em;
-    margin-top:10em;
-    
-    
+    overflow:scroll;
+    width: 70%;   
+     
 }
 .card{
     border: solid 2px black;
     background-color: rgb(43, 226, 83);
-    height: 23em;
-    min-width: 22em;
+    /* height:23em; */
+    /* min-width: 22em; */
+    min-width: 40%;
     display: flex;
-    margin: 10px;
+    margin-right: 18px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 4em;
     /* overflow: scroll; */
-    
     
 }
 

@@ -3,17 +3,17 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  background-color: #ffffff; 
+  /* background-color: #ffffff;  */
   /* z-index: 100; 
   height: 100%;  */
   
 }
-
 /* Navbar container */
 .container {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px; 
+  
   
 }
 
@@ -36,6 +36,14 @@ li {
 /* Button in the navbar */
 button {
   border: none;
+  cursor: pointer;
+}
+li a{
+text-decoration: none;
+color: whitesmoke;
+}
+li a :hover{
+  background-color: red;
   cursor: pointer;
 }
 

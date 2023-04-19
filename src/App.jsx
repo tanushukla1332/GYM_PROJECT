@@ -11,7 +11,7 @@ import SignIn from "./pages/SignIn"
 //import './App.css'
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/signup" element={<SignUpPage/>} />
         <Route path="/signin" element={<SignIn/>}/>
       </Routes>
-    </div>
+    </>
   );
 }
 

@@ -9,7 +9,6 @@ export default function Navbar() {
     <div className={Nav.main_container}>
       <nav className={Nav.container}>
         <Logo1 />
-
         <ul>
           <li>
             <Link to="/">Home</Link>
