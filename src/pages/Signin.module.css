@@ -4,7 +4,11 @@
     height: 100vh;
     align-items: center;
     width: 100vw;
-    background-color: rgb(56, 67, 224);
+    /* background-color: rgb(56, 67, 224); */
+    background: url('https://cdn.pixabay.com/photo/2017/06/21/14/40/weightlifting-2427461_960_720.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
 }
 .from {
     background-color: #9c8b8b;

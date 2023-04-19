@@ -52,12 +52,13 @@ export default function SignIn() {
   }
 
   // If user is already signed in, redirect to the homepage
-  useEffect(() => {
-    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
-    if (loggedInUser) {
-      // nav("/");
-    }
-  }, [nav]);
+
+  // useEffect(() => {
+  //   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  //   if (loggedInUser) {
+  //     nav("/");
+  //   }
+  // }, [nav]);
 
   return (
     <>
@@ -65,7 +66,7 @@ export default function SignIn() {
         <div className={Sign.from}>
           <img
             className={Sign.image}
-            src="https://png.pngtree.com/png-vector/20190114/ourmid/pngtree-vector-add-user-icon-png-image_313043.jpg"
+            src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
             alt=""
           />
           <form onSubmit={handleSumbit}>

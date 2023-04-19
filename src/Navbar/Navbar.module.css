@@ -1,9 +1,9 @@
 /* Navbar main container */
-.Nav.main_container {
+.main_container {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  
+  background-color: grey;
   /* background-color: #ffffff;  */
   /* z-index: 100; 
   height: 100%;  */ 

@@ -14,7 +14,8 @@
     /* background-color: black; */
     display: flex;
     flex-direction: row;
-    overflow:scroll;
+    /* overflow:scroll; */
+    overflow-x: scroll;
     width: 70%;   
      
 }
