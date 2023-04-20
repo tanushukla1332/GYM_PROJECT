@@ -7,7 +7,7 @@ export default function ContactUs() {
       <div>
       <section className={contact.container}>
           <div className={contact.leftContainer}>
-            <img src="https://cdn.pixabay.com/photo/2016/11/19/12/43/barbell-1839086_960_720.jpg" alt="" height="100%"/>
+            <img src="https://cdn.pixabay.com/photo/2016/11/19/12/43/barbell-1839086_960_720.jpg" alt="" />
           </div>
 
           <div className={contact.rightContainer}>

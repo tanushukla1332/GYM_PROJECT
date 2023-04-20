@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Hom from "./Home.module.css";
+import About from './About'
+import ContactUs from "./ContactUs";
 
 export default function Home() {
   const [image, setImage] = useState(0);
@@ -50,6 +52,8 @@ const Text=["You are stronger than you think.  Enhance your health and fitness p
           <img src={Images[image]} alt="" className={Hom.img}/> {/* Update image source to use the correct array indexing */}
         </div>
       </section>
+      <About/>
+      <ContactUs/>
     </div>
   );
 }
