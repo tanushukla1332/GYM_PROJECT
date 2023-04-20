@@ -42,27 +42,11 @@ li a{
 text-decoration: none;
 color: whitesmoke;
 }
-li a :hover{
-  background-color: red;
+a:hover{
+  /* background-color: rgb(68, 33, 33); */
+  color : blue;
   cursor: pointer;
 }
 
-/* li Link{
-  color: whitesmoke;
-} */
-@media screen and(max-width: 768px){
-  .container{
-    display:block;
-        position:fixed;
-        right:-200px;
-        top: 0px;
-        background-color: red;
-        height: 100vh;
-        width: 200px;
-        z-index:10;
-  }
-  
 
-  
-} 
   

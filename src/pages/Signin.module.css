@@ -5,14 +5,15 @@
     align-items: center;
     width: 100vw;
     /* background-color: rgb(56, 67, 224); */
-    background: url('https://cdn.pixabay.com/photo/2017/06/21/14/40/weightlifting-2427461_960_720.jpg');
+    background: url("https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247_960_720.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: center; */
 }
 .from {
-    background-color: #9c8b8b;
-    height: 25em;
+    border: 2px solid whitesmoke;
+    background-color: #4e4c4c;
+    height: 31em;
     width: 26em;
     display: flex;
     flex-direction: column;
@@ -52,5 +53,24 @@
     background-color: aquamarine;
     border-radius: 0.4em;
     font-weight: bolder;
+
+}
+
+input {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  .registerLink a{
+    height: 2em;
+    width: 5em;
+    border: solid 1px black;
+    background-color: aquamarine;
+    border-radius: 0.4em;
+    font-weight: bolder;
+    text-decoration: none;
 
 }

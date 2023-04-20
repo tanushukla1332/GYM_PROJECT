@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background: url("https://cdn.pixabay.com/photo/2023/04/15/17/17/forest-floor-7928213_1280.jpg");
+    background: url("https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247_960_720.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,11 +20,11 @@
      
 }
 .card{
-    border: solid 2px black;
-    background-color: rgb(43, 226, 83);
+    /* border: solid 2px black; */
+    background-color:white;
     /* height:23em; */
     /* min-width: 22em; */
-    min-width: 40%;
+    min-width: 32%;
     display: flex;
     margin-right: 18px;
     flex-direction: column;
@@ -48,13 +48,10 @@
 
 .name{
     /* background-color: black; */
-    color: antiquewhite;
+    color:black;
     font-size: 1.5em;
     margin-bottom: 20px;
-
-
 }
-
 .description{
     /* background-color: black; */
     font-size:1em;
@@ -62,3 +59,4 @@
     margin-top: -1em;
     padding:20px;
 }
+

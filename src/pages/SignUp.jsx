@@ -33,6 +33,7 @@ export default function SignUpPage() {
       
     } else if (password.length<=8)
     alert("plz enter required 8 word")
+
     const users = getUsersData();
     users.push({
       userName,
@@ -71,12 +72,11 @@ export default function SignUpPage() {
           className={Sign.image}
           src="https://png.pngtree.com/png-vector/20190114/ourmid/pngtree-vector-add-user-icon-png-image_313043.jpg"
           alt="profile"
-
-          
         />
+
         <form onSubmit={handleSubmit}>
           <div className={Sign.inputDiv}>
-            UserName :{' '}
+           <p>UserName :</p> 
             <input
               type="text"
               placeholder="Enter your username"
@@ -84,7 +84,7 @@ export default function SignUpPage() {
               onChange={handleUserName}
             />
             <br />
-            Email:{' '}
+            <p>Email:</p>
             <input
               type="email"
               placeholder="Enter your email"
@@ -92,7 +92,7 @@ export default function SignUpPage() {
               onChange={handleChangeEmail}
             />
             <br />
-            Password:{' '}
+            <p>Password:</p>
             <input
               type="password"
               placeholder="Enter your password"
@@ -106,7 +106,7 @@ export default function SignUpPage() {
           <div className={Sign.buttonDiv}>
             <p className={Sign.registerLink}>
               Already have an account?
-              <br />
+              {/* <br /> */}
               <Link to="/signin">SignIn</Link>
             </p>
             <button className={Sign.button}>SignUp</button>

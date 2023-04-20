@@ -1,14 +1,19 @@
 .footer_table {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
+    background-color: rgb(44, 37, 37);
     width: 100%;
+    /* color: red; */
 }
 
 .tableData tr td {
     text-align: center;
     padding: 20px;
-    color: brown;
+    color: tomato;
+    
 }
 
 .footer_table tr th {
     text-transform: uppercase;
+    color: #fff;
+    
 }

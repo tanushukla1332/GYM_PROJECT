@@ -71,7 +71,7 @@ export default function SignIn() {
           />
           <form onSubmit={handleSumbit}>
             <div className={Sign.inputDiv}>
-              Email:
+              <p>Email:</p>
               <input
                 type="email"
                 value={email}
@@ -80,7 +80,7 @@ export default function SignIn() {
               />
               {emailError && <div className={Sign.error}>{emailError}</div>}
               <br />
-              Password:
+             <p> Password:</p>
               <input
                 type="password"
                 value={password}
