@@ -1,7 +1,5 @@
 import React from "react";
 import style from "./ClientStories.module.css"
-
-
 export default function ClientStories() {
   const clients=[
     {

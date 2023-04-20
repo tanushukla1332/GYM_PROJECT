@@ -7,7 +7,6 @@ export default function SignUpPage() {
   const [password, setPassword] = useState('');
   const [userName, setUserName] = useState('');
   const [error, setError] = useState('');
-
   const getUsersData = () => {
     const users = localStorage.getItem('users'); // getting data
     try {
