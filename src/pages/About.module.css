@@ -1,63 +1,91 @@
-.abovePart{    
-    
-    /* background: url("https://cdn.pixabay.com/photo/2016/11/19/12/43/barbell-1839086_960_720.jpg");
-     */
+.abovePart {
     background: url("https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247_960_720.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
-    
-}
-
-p{
+  }
+  
+  p {
     color: white;
     font: bold;
     font-weight: 300;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-}
-.FirstPart{
+  }
+  
+  .FirstPart {
     display: flex;
-
-
-}
-.FirstPartiind{
+  }
+  
+  .FirstPartiind {
     margin-top: 20px;
-}
-.SecPart{
-    margin-left:100px;
-    
-}
-.SecPart h1{
+  }
+  
+  .SecPart {
+    margin-left: 100px;
+  }
+  
+  .SecPart h1 {
     color: red;
-}
-.VideoPart{
+  }
+  
+  .VideoPart {
     display: flex;
     margin-left: 300px;
     margin-top: 50px;
     flex: 1;
-}
-.Left{
+  }
+  
+  .Left {
     display: flex;
-}
-.LeftP{
+    flex-direction: column;
+  }
+  
+  .LeftP {
     flex: 1;
-}
-.LeftP h1{
+  }
+  
+  .LeftP h1 {
     color: red;
     margin-left: 20px;
     margin-top: 50px;
-}
-.leftcontainer {
+  }
+  
+  .leftcontainer {
     margin-left: 20px;
     margin-top: 20px;
     color: whitesmoke;
-    
-
-}
-.leftcontaineriind{
+  }
+  
+  .leftcontaineriind {
     margin-left: 20px;
-
-    
-}
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    .FirstPart {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .SecPart {
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .VideoPart {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .Left {
+      margin-top: 20px;
+    }
+  
+    .LeftP h1 {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  

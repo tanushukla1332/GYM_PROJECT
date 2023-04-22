@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import Sign from './Signin.module.css';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import Sign from "./Signin.module.css";
+import { Link } from "react-router-dom";
 
 export default function SignUpPage() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [userName, setUserName] = useState('');
-  const [error, setError] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [userName, setUserName] = useState("");
+  const [error, setError] = useState("");
 
   const getUsersData = () => {
-    const users = localStorage.getItem('users'); // getting data
+    const users = localStorage.getItem("users"); // getting data
     try {
       if (users) {
         // users is there
@@ -24,39 +24,29 @@ export default function SignUpPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!userName || !email || !password) {
-      setError('Please fill all fields');
+      setError("Please fill all fields");
       return;
     }
     if (!validateEmail(email)) {
-      setError('Invalid email format');
+      setError("Invalid email format");
       return;
-      
-    } else if (password.length<=8)
-    alert("plz enter required 8 word")
-
+    }
+    if (password.length < 8) {
+      // corrected if condition and enclosed alert message in braces
+      alert("plz enter required 8 word");
+      return;
+    }
     const users = getUsersData();
     users.push({
       userName,
       email,
       password,
     });
-    localStorage.setItem('users', JSON.stringify(users));
-    setError('');
-    setUserName('');
-    setEmail('');
-    setPassword('');
-  };
-
-  const handleUserName = (event) => {
-    setUserName(event.target.value);
-  };
-
-  const handleChangeEmail = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleChangePass = (event) => {
-    setPassword(event.target.value);
+    localStorage.setItem("users", JSON.stringify(users));
+    setError("");
+    setUserName("");
+    setEmail("");
+    setPassword("");
   };
 
   const validateEmail = (email) => {
@@ -76,12 +66,12 @@ export default function SignUpPage() {
 
         <form onSubmit={handleSubmit}>
           <div className={Sign.inputDiv}>
-           <p>UserName :</p> 
+            <p>UserName :</p>
             <input
               type="text"
               placeholder="Enter your username"
               value={userName}
-              onChange={handleUserName}
+              onChange={(e)=>setUserName(e.target.value)}
             />
             <br />
             <p>Email:</p>
@@ -89,7 +79,7 @@ export default function SignUpPage() {
               type="email"
               placeholder="Enter your email"
               value={email}
-              onChange={handleChangeEmail}
+              onChange={(e)=>setEmail(e.target.value)}
             />
             <br />
             <p>Password:</p>
@@ -97,7 +87,7 @@ export default function SignUpPage() {
               type="password"
               placeholder="Enter your password"
               value={password}
-              onChange={handleChangePass}
+              onChange={(e)=>setPassword(e.target.value)}
             />
             <br />
           </div>
@@ -107,7 +97,7 @@ export default function SignUpPage() {
             <p className={Sign.registerLink}>
               Already have an account?
               {/* <br /> */}
-              <Link to="/signin">SignIn</Link>
+              <Link to="/">SignIn</Link>
             </p>
             <button className={Sign.button}>SignUp</button>
           </div>

@@ -13,7 +13,13 @@ export default function SignIn() {
   useEffect(() => {
     let data = JSON.parse(localStorage.getItem("users"));
     setUserList(data);
-  }, []);
+
+    // Check if user is already signed in
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    if (loggedInUser) {
+      nav("/home");
+    }
+  }, [nav]);
 
   function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -22,10 +28,10 @@ export default function SignIn() {
 
   function handleSumbit(event) {
     event.preventDefault();
-
+  
+    setEmail('')
+    setPassword('')
     // Validate email and password
-    setEmailError("");
-    setPasswordError("");
     let isValid = true;
     if (!email || !validateEmail(email)) {
       setEmailError("Please enter a valid email address.");
@@ -34,31 +40,43 @@ export default function SignIn() {
     if (!password) {
       setPasswordError("Please enter your password.");
       isValid = false;
-    } else if (password.length <= 4) alert("plz enter required 8 word");
-
+    }
+    if (password.length < 8) {
+      setPasswordError("Please enter a password with at least 8 characters.");
+      isValid = false;
+    }
+  
     if (isValid) {
       // Check if user is in the user list
-      const foundUser = userList.find(
-        (user) => user.email === email && user.password === password
-      );
-      if (foundUser) {
-        localStorage.setItem("loggedInUser", JSON.stringify(foundUser));
-        alert("You have successfully signed in.");
-        nav("/");
+      if (userList.length > 0) {
+        const foundUser = userList.find(
+          (user) => user.email === email && user.password === password
+        );
+        if (foundUser) {
+          localStorage.setItem("loggedInUser", JSON.stringify(foundUser));
+          alert("You have successfully signed in.");
+          nav("/home");
+        } else {
+          alert("Incorrect email or password.");
+        }
       } else {
-        alert("Incorrect email or password.");
+        alert("No user found. Please sign up first.");
       }
     }
+  
+    setEmail('')
+    setPassword('')
   }
+  
 
   // If user is already signed in, redirect to the homepage
 
-  // useEffect(() => {
-  //   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
-  //   if (loggedInUser) {
-  //     nav("/");
-  //   }
-  // }, [nav]);
+  useEffect(() => {
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    if (loggedInUser) {
+      nav("/home");
+    }
+  }, [nav]);
 
   return (
     <>
@@ -80,7 +98,7 @@ export default function SignIn() {
               />
               {emailError && <div className={Sign.error}>{emailError}</div>}
               <br />
-             <p> Password:</p>
+              <p> Password:</p>
               <input
                 type="password"
                 value={password}

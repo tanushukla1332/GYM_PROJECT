@@ -1,32 +1,38 @@
-/* Home.module.css */
 .main_file {
-    width: 100%;  
-    position: relative; 
-    text-align: center;
-  }
-  
-  .heading {
-    position: absolute;
-    top: 20rem; /* Update margin-top to top */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%; /* Added width to center align text */
-    
-  }
-  
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.heading {
+  position: absolute;
+  top: 20rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.heading h1 {
+  font-size: 30px;
+  color: whitesmoke;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: gray;
+}
+
+.img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
   .heading h1 {
-    font-size: 30px;
-    color: whitesmoke;
-    /* color: black; */
-    max-width: 80%;
-    margin: 0 auto;
-    
+    font-size: 20px;
+    margin-top: 10rem;
   }
-  body{
-    background-color: gray;
-    /* background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2021-12/211208-working-out-stock-mn-1310-55e1c7.jpg"); */
-  }
-  .img{
-    width: 100%;
-    /* opacity: 0.5; */
-  }
+}

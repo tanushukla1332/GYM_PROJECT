@@ -1,10 +1,17 @@
 import React from "react";
-import Footers from "./Footer.module.css"
+import Footers from "./Footer.module.css";
+
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div> 
-      <table className={Footers.footer_table} >
+    <div>
+      <table className={Footers.footer_table}>
         <thead>
           <tr>
             <th>About Us</th>
@@ -14,8 +21,8 @@ export default function Footer() {
             <th>CUSTOMER SERVICE</th>
           </tr>
         </thead>
-        <tbody className={Footers.tableData} >
-          <tr >
+        <tbody className={Footers.tableData}>
+          <tr>
             <td>
               Company background
               <br />
@@ -52,14 +59,23 @@ export default function Footer() {
               <br />
               Labour Compliance Documents
             </td>
-            <td>
-              Members' Area
+            <td className={Footers.icons}>
+              <a href="https://www.facebook.com" target="_blank">
+                <FaFacebookF />
+              </a>
               <br />
-              FAQs
+              <a href="https://www.linkedin.com/" target="_blank">
+                <FaLinkedinIn />
+              </a>
               <br />
-              Contact us
+              <a href="https://www.instagram.com" target="_blank">
+                <FaInstagram />
+              </a>
               <br />
-              Membership Enquiry
+              <a href="https://www.twitter.com" target="_blank">
+                {" "}
+                <FaTwitter />
+              </a>
             </td>
           </tr>
         </tbody>

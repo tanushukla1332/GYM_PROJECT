@@ -1,8 +1,11 @@
 import React from "react";
 import contact from './ContactUs.module.css'
+import Navbar from "../Navbar/Navbar";
 
 export default function ContactUs() {
   return (
+    <>
+    <Navbar/>
     <div className={contact.First_div}>
       <div>
       <section className={contact.container}>
@@ -20,6 +23,7 @@ export default function ContactUs() {
           </div>
         </section>
       </div>
-    </div>    
+    </div>   
+    </> 
   );
 }

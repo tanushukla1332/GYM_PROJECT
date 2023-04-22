@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Hom from "./Home.module.css";
-import About from './About'
-import ContactUs from "./ContactUs";
+import Navbar from "../Navbar/Navbar";
 
 export default function Home() {
   const [image, setImage] = useState(0);
@@ -23,9 +22,6 @@ const Text=["You are stronger than you think.  Enhance your health and fitness p
       setImage((image) => (image + 1) % Images.length);
     }, 2000);
     
-    return () => {
-      clearInterval(interval); // Cleanup the interval on unmount
-    };
   }, []);
 
   useEffect(() => {
@@ -33,14 +29,13 @@ const Text=["You are stronger than you think.  Enhance your health and fitness p
       setText((text) => (text + 1) % Text.length);
     }, 2000);
     
-    return () => {
-      clearInterval(interval); // Cleanup the interval on unmount
-    };
   }, []);
 
 
 
   return (
+    <>
+    <Navbar/>
     <div>
       <section className={Hom.main_file}>
         <div className={Hom.heading}>
@@ -49,12 +44,13 @@ const Text=["You are stronger than you think.  Enhance your health and fitness p
           </h1>
         </div>
         <div>
-          <img src={Images[image]} alt="" className={Hom.img}/> {/* Update image source to use the correct array indexing */}
+          {/* Update image source to use the correct array indexing */}
+          <img src={Images[image]} alt="" className={Hom.img}/> 
         </div>
       </section>
-      <About/>
-      <ContactUs/>
+     
     </div>
+    </>
   );
 }
 

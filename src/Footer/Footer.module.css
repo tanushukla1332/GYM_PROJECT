@@ -1,8 +1,7 @@
 .footer_table {
-    /* background-color: lightcoral; */
     background-color: rgb(44, 37, 37);
     width: 100%;
-    /* color: red; */
+    padding: 25px;
 }
 
 .tableData tr td {
@@ -17,3 +16,14 @@
     color: #fff;
     
 }
+a{
+    text-decoration: none;
+    font-size: larger;
+    color: #fff;
+    
+}
+
+tr th:hover{
+    cursor: pointer;
+    color:blue;
+ }
