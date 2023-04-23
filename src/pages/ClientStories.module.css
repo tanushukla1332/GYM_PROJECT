@@ -22,7 +22,7 @@
 .card{
     /* border: solid 2px black; */
     background-color:white;
-    /* height:23em; */
+    height:23em;
     /* min-width: 22em; */
     min-width: 32%;
     display: flex;

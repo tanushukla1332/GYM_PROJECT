@@ -43,6 +43,7 @@ export default function SignUpPage() {
       password,
     });
     localStorage.setItem("users", JSON.stringify(users));
+    alert('sign up done successfully')
     setError("");
     setUserName("");
     setEmail("");

@@ -30,6 +30,50 @@ body {
   object-fit: cover;
 }
 
+.headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  color: tomato;
+  letter-spacing: 2px;
+}
+
+.headPara {
+  border: 2px solid;
+  /* background-color: #fff; */
+  text-align: center;
+  
+}
+.mainParent{
+  background: url("https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247_960_720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.headPara p {
+  color: black;
+  margin: 5px;
+  padding: 20px 100px;
+  background-color: #fff;
+  margin: 10px 20%;
+  border-radius: 15px;
+}
+.mainH1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid; */
+  color: red;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+
+}
+
 @media only screen and (max-width: 600px) {
   .heading h1 {
     font-size: 20px;

@@ -9,80 +9,65 @@ import CardHeader from "@mui/material/CardHeader";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import StarIcon from "@mui/icons-material/StarBorder";
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
+// import Link from "@mui/material/Link";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
 import Navbar from "../Navbar/Navbar";
 
-function Copyright(props) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
-
-const tiers = [
-  {
-    title: "Free",
-    price: "0",
-    description: [
-      "10 users included",
-      "2 GB of storage",
-      "Help center access",
-      "Email support",
-    ],
-    buttonText: "Sign up for free",
-    buttonVariant: "outlined",
-  },
-  {
-    title: "Pro",
-    subheader: "Most popular",
-    price: "15",
-    description: [
-      "20 users included",
-      "10 GB of storage",
-      "Help center access",
-      "Priority email support",
-    ],
-    buttonText: "Get started",
-    buttonVariant: "contained",
-  },
-  {
-    title: "Enterprise",
-    price: "30",
-    description: [
-      "50 users included",
-      "30 GB of storage",
-      "Help center access",
-      "Phone & email support",
-    ],
-    buttonText: "Contact us",
-    buttonVariant: "outlined",
-  },
-];
+import { useNavigate } from "react-router-dom";
 
 function PricingContent() {
+  const navigate = useNavigate();
+
+  const tiers = [
+    {
+      title: "Free",
+      price: "0",
+      description: [
+        "10 users included",
+        "2 GB of storage",
+        "Help center access",
+        "Email support",
+      ],
+      buttonText: "Take free trial",
+      buttonVariant: "outlined",
+      onClick: () => navigate("/home"),
+    },
+    {
+      title: "Pro",
+      subheader: "Most popular",
+      price: "15",
+      description: [
+        "20 users included",
+        "10 GB of storage",
+        "Help center access",
+        "Priority email support",
+      ],
+      buttonText: "Get started",
+      buttonVariant: "contained",
+    },
+    {
+      title: "Enterprise",
+      price: "30",
+      description: [
+        "50 users included",
+        "30 GB of storage",
+        "Help center access",
+        "Phone & email support",
+      ],
+      buttonText: "Contact us",
+      buttonVariant: "outlined",
+    },
+  ];
+
   const styles = {
     backgroundImage:
       "url(" +
       "https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247_960_720.jpg" +
       ")",
     backgroundSize: "cover",
-    backgroundRepeat  : 'no-repeat',
-    
+    backgroundRepeat: "no-repeat",
   };
   return (
     <div style={styles}>
@@ -98,7 +83,7 @@ function PricingContent() {
         disableGutters
         maxWidth="lg"
         component="main"
-        sx={{ pt: 18, pb: 6 }}
+        sx={{ pt: 8, pb: 6 }}
       >
         <Typography
           component="h1"
@@ -109,6 +94,7 @@ function PricingContent() {
         >
           Pricing
         </Typography>
+
         <Typography
           variant="h5"
           align="center"
@@ -153,6 +139,8 @@ function PricingContent() {
                       justifyContent: "center",
                       alignItems: "baseline",
                       mb: 2,
+                      padding: 10
+                      
                     }}
                   >
                     <Typography
@@ -173,6 +161,7 @@ function PricingContent() {
                         variant="subtitle1"
                         align="center"
                         key={line}
+                        margin={1}
                       >
                         {line}
                       </Typography>
