@@ -30,10 +30,7 @@ export default function About() {
               contempt, "He can neither swim nor write." After a while, however,
               Olympic athletes began training in buildings specifically designed
               for them. Community sports never became as popular among
-              ancient Romans as it had among the ancient Greeks. Gyms were used
-              more as a preparation for military service or spectator sports.
-              During the Roman Empire, the gymnastic art was forgotten. In the
-              Dark Ages there were sword fighting tournaments and of chivalry.
+              ancient Romans as it had among the ancient Greeks.
             </p>
           </div>
         </div>
@@ -48,11 +45,7 @@ export default function About() {
               meaning of intellectual education persisted in Greek, German and
               other languages to denote a certain type of school providing
               secondary education, the gymnasium, whereas in English the meaning
-              of physical education pertained to the word 'gym'.The Greek
-              word gymnasium, which means "school for naked exercise," was used
-              to designate a locality for the education of young men, including
-              physical education which was
-
+              of physical education pertained to the word 'gym
             </p>
           </div>
           {/* right part */}

@@ -18,7 +18,7 @@ export default function Footer() {
             <th>Membership</th>
             <th>CLUBS</th>
             <th>POLICIES & LEGAL</th>
-            <th>CUSTOMER SERVICE</th>
+            <th>Connect on Social Media's</th>
           </tr>
         </thead>
         <tbody className={Footers.tableData}>
@@ -26,9 +26,9 @@ export default function Footer() {
             <td>
               Company background
               <br />
-              Careers
+              Careers for  company
               <br />
-              Press room
+              Press room with spa
               <br />
               Reviews & Testimonials
             </td>
@@ -42,16 +42,16 @@ export default function Footer() {
               Frequently asked questions
             </td>
             <td>
-              Club finder
+              Club finder Bar Club
               <br />
               Club operating hours
               <br />
               Get 1 Day Free Pass
               <br />
-              Club Facilities
+              Club Facilities policy
             </td>
             <td>
-              Privacy policy
+              Privacy policy for customer
               <br />
               Terms & Conditions - Website
               <br />
@@ -60,7 +60,8 @@ export default function Footer() {
               Labour Compliance Documents
             </td>
             <td className={Footers.icons}>
-              <a href="https://www.facebook.com" target="_blank">
+              
+              <a href="https://www.facebook.com" target="_blank"> 
                 <FaFacebookF />
               </a>
               <br />
@@ -76,6 +77,7 @@ export default function Footer() {
                 {" "}
                 <FaTwitter />
               </a>
+            
             </td>
           </tr>
         </tbody>

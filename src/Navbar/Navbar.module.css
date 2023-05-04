@@ -1,10 +1,10 @@
-/* 
 .main_container {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   background-color: grey;
   z-index: 20;
+  padding: 1.2rem;
 }
 
 
@@ -15,83 +15,11 @@
 }
 
 
-ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-
-button {
-  border: none;
-  cursor: pointer;
-}
-
-li a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-a:hover {
-  color: blue;
-  cursor: pointer;
-}
-
-
-@media (min-width: 768px) {
-  .container {
-    padding: 10px 40px;
-  }
-
-  ul {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  li {
-    margin: 0 10px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-} */
-/* Navbar main container */
-.main_container {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  background-color: grey;
-  z-index: 20;
-}
-
-/* Navbar container */
-.container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-}
-
-/* Logo */
 .Logo1 {
   height: 50px;
 }
 
-/* Menu icon */
+
 .menu_icon {
   display: block;
   cursor: pointer;
@@ -127,7 +55,7 @@ a:hover {
   top: 18px;
 }
 
-/* Active menu icon */
+
 .menu_icon_active .menu_icon_bar:nth-child(1),
 .menu_icon_active .menu_icon_bar:nth-child(4) {
   top: 9px;
@@ -143,7 +71,7 @@ a:hover {
   transform: rotate(-45deg);
 }
 
-/* Unordered list inside the navbar */
+
 ul {
   display: flex;
   flex-direction: column;
@@ -151,28 +79,30 @@ ul {
   align-items: center;
   gap: 30px;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   list-style: none;
+  font-weight: 600;
+  font-size: 20px;
 }
 
-/* List items in the navbar */
+
 li {
   text-decoration: none;
   text-transform: uppercase;
 }
 
-/* Link in the navbar */
-.Link {
+
+a{
   text-decoration: none;
   color: whitesmoke;
 }
 
-.Link:hover {
-  color: blue;
+a:hover {
+  color: rgba(0, 0, 255, 0.386);
   cursor: pointer;
 }
 
-/* Active menu */
+
 .menu_active {
   display: flex;
   flex-direction: column;
@@ -203,17 +133,17 @@ li {
     margin: 0 10px;
   }
 
-  /* Logo */
+ 
   .Logo1 {
     height: 70px;
   }
 
-  /* Menu icon */
+ 
   .menu_icon {
     display: none;
   }
 
-  /* Unordered list inside the navbar */
+  
   ul {
     flex-direction: row;
     justify-content: flex-end;
