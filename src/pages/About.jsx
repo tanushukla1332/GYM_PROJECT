@@ -8,8 +8,6 @@ export default function About() {
       <Navbar />
       <div className={Abo.abovePart}>
         <div className={Abo.FirstPart}>
-          {/* <h1> This is About page</h1> */}
-          {/* left part */}
           <div className={Abo.FirstPartiind}>
             <iframe
               width="560"
@@ -26,16 +24,12 @@ export default function About() {
           <div className={Abo.SecPart}>
             <h1>About Us</h1>
             <p>
-              Our mission is to build a community that empowers our clients to
-              become a better version of themselves with every session.
-            </p>
-            <p>
               Gymnasia also had teachers of wisdom and philosophy. Community
               gymnastic events were done as part of the celebrations during
               various village festivals. In ancient Greece there was a phrase of
               contempt, "He can neither swim nor write." After a while, however,
               Olympic athletes began training in buildings specifically designed
-              for them.[4] Community sports never became as popular among
+              for them. Community sports never became as popular among
               ancient Romans as it had among the ancient Greeks. Gyms were used
               more as a preparation for military service or spectator sports.
               During the Roman Empire, the gymnastic art was forgotten. In the
@@ -46,23 +40,22 @@ export default function About() {
             </p>
           </div>
         </div>
-        {/* left part */}
+
         <div className={Abo.Left}>
-          {/* left part */}
           <div className={Abo.LeftP}>
             <h1>Why choose us?</h1>
             <p className={Abo.leftcontainer}>
               Our mission is to build a community that empowers our clients to
               become a better version of themselves with every session. In
-              Ancient Greece, the gymnasion (γυμνάσιον) was a locality for both
+              Ancient Greece, the gymnasion was a locality for both
               physical and intellectual education of young men. The latter
               meaning of intellectual education persisted in Greek, German and
               other languages to denote a certain type of school providing
               secondary education, the gymnasium, whereas in English the meaning
-              of physical education pertained to the word 'gym'.[7] The Greek
+              of physical education pertained to the word 'gym'.The Greek
               word gymnasium, which means "school for naked exercise," was used
               to designate a locality for the education of young men, including
-              physical education (gymnastics, for example, exercise) which was
+              physical education which was
               customarily performed naked, as well as bathing, and studies. For
               the Greeks, physical education was considered as important as
               cognitive learning. Most Greek gymnasia had libraries for use

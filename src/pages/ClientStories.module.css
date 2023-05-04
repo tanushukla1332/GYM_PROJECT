@@ -17,6 +17,7 @@
     /* overflow:scroll; */
     overflow-x: scroll;
     width: 70%;   
+    overflow-y: hidden;
      
 }
 .card{

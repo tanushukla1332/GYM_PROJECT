@@ -9,6 +9,7 @@ export default function Home() {
 
   const Images = [
     "https://cdn.pixabay.com/photo/2015/07/02/10/22/training-828726_1280.jpg",
+    "https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg",
     "https://cdn.pixabay.com/photo/2016/11/22/22/24/adult-1850925_1280.jpg",
     "https://media.istockphoto.com/id/1279902517/photo/be-as-strong-as-you-were-born-to-be.jpg?s=612x612&w=0&k=20&c=VL1HmKItYHiZkUguh-Fsa1W1qccUuWoUQBNLzHqcbns=",
     "https://cdn.pixabay.com/photo/2018/04/05/17/21/kettlebell-3293475_1280.jpg",
