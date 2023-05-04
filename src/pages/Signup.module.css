@@ -1,0 +1,146 @@
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background:url("https://cdn.pixabay.com/photo/2016/05/27/22/30/workout-1420741_1280.jpg");
+  width: 100%;
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 35%;
+  overflow-y: scroll;
+  max-height:60vh;
+  position: fixed;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.inputDiv P{
+  text-align: center;
+  font-size: 20px;
+  color: #ff6347;
+  padding-bottom: 20px;
+}
+
+input[type= "text"],
+input[type="email"],
+input[type="password"]
+{
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  color: #444;
+  text-align: center;
+}
+
+input[type="email"] {
+  margin-right: 10px;
+}
+
+.passwordInput {
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+button {
+  padding:10px;
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #ff6347;
+  cursor: pointer;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.registerLink {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(43, 42, 42);
+}
+
+.registerLink a {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+.registerLink a:hover {
+  text-decoration: underline;
+}
+
+
+.signUp.usernameInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+
+.signUp.usernameInput::placeholder {
+  color: #ccc;
+}
+
+
+.signUp.usernameInput:focus {
+  outline: none;
+  border: 1px solid #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+/* Media Queries */
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .form {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .form {
+    width: 60%;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+  .form {
+    width: 35%;
+  }
+}

@@ -1,0 +1,15 @@
+.btn button{
+    
+    border-radius: 10px;
+    color:whitesmoke;
+    background-color:#5577bb;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 5.5rem;
+  
+}
+
+.btn button:hover{
+    color: black;
+    background: #ffff;
+}

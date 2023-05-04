@@ -1,0 +1,139 @@
+.main_file {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.heading {
+  position: absolute;
+  top: 20rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.heading h1 {
+  font-size: 30px;
+  color: whitesmoke;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: gray;
+}
+
+.img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  color: tomato;
+  letter-spacing: 2px;
+}
+
+.headPara {
+  border: 2px solid;
+  /* background-color: #fff; */
+  text-align: center;
+  
+}
+.mainParent{
+  background: url("https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247_960_720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.headPara p {
+  color: black;
+  margin: 5px;
+  padding: 20px 100px;
+  background-color: #fff;
+  margin: 10px 20%;
+  border-radius: 15px;
+}
+.mainH1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid; */
+  color: red;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+/* Media Queries */
+
+/* For all mobile devices */
+@media only screen and (max-width: 767px) {
+  .heading {
+    top: 10rem;
+  }
+
+  .heading h1 {
+    font-size: 20px;
+  }
+
+  .headPara p {
+    padding: 20px 20px;
+    margin: 10px 5%;
+  }
+
+  .mainH1 {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+/* For iPads */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .heading {
+    top: 15rem;
+  }
+
+  .heading h1 {
+    font-size: 25px;
+  }
+
+  .headPara p {
+    padding: 20px 50px;
+    margin: 10px 10%;
+  }
+
+  .mainH1 {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+}
+
+/* For desktop */
+@media only screen and (min-width: 1024px) {
+  .heading {
+    top: 20rem;
+  }
+
+  .heading h1 {
+    font-size: 30px;
+  }
+
+  .headPara p {
+    padding: 20px 100px;
+    margin: 10px 20%;
+  }
+
+  .mainH1 {
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+  }
+}

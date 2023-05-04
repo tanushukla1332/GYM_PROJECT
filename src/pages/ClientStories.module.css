@@ -1,0 +1,134 @@
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url("https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247_960_720.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+}
+
+.cardDetails{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 70%;   
+}
+
+.card{
+    background-color:rgb(247, 240, 240);
+    height:23em;
+    min-width: 32%;
+    display: flex;
+    margin-right: 18px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4em;
+}
+
+.img{
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    border: 0.2em black solid;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.name{
+    color:black;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.description{
+    font-size:1em;
+    color: rgb(135, 102, 236);
+    margin-top: -1em;
+    padding:20px;
+    font-weight: 800;
+    font-size: 18px;
+    
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+    .main {
+        height: auto;
+        min-height:100vh;
+        padding: 20px;
+        align-items: flex-start;
+    }
+    .cardDetails {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+    }
+    .card {
+        width: 100%;
+        /* margin-right: 20px; */
+        margin-bottom: 20px;
+        border-radius: 1em;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .img {
+        height: 7em;
+        width: 7em;
+        margin-top: 1em;
+        
+    }
+    .description {
+        padding: 20px;
+    }
+}
+
+/* iPads */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .main {
+        padding: 20px;
+    }
+    .cardDetails {
+        width: 90%;
+    }
+    .card {
+        min-width: 47%;
+        margin-right: 5%;
+        text-align: center;
+        align-items: center;
+    }
+    .img {
+        height: 8em;
+        width: 8em;
+        margin-top: -5em;
+    }
+}
+
+/* Desktops */
+@media only screen and (min-width: 1024px) {
+    .main {
+        padding: 40px;
+        align-items: center;
+    }
+    .cardDetails {
+        width: 80%;
+        margin-top: 30px;
+    }
+    .card {
+        min-width: 28%;
+        margin-right: 1rem;
+        text-align: center;
+        align-items: center;
+    }
+    .img {
+        height: 10em; 
+         width: 10em;
+        /* margin-top: -6em; */
+    }
+}
