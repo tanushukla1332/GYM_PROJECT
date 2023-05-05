@@ -21,9 +21,6 @@ export default function Navbar() {
           className={`${Nav.menu_icon} ${isOpen ? Nav.menu_icon_active : ""}`}
           onClick={toggleMenu}
         >
-          <span className={Nav.menu_icon_bar}></span>
-          <span className={Nav.menu_icon_bar}></span>
-          <span className={Nav.menu_icon_bar}></span>
         </div>
         <ul className={`${Nav.menu} ${isOpen ? Nav.menu_active : ""}`}>
           <li>
